@@ -33,3 +33,6 @@ StartupNotify=false
 Terminal=false" >> ~/.local/share/applications/noisetorch_startup.desktop
 mkdir ~/.config/autostart
 cp ~/.local/share/applications/noisetorch_startup.desktop ~/.config/autostart/
+
+# Remove script after completion
+rm -- "$0"
