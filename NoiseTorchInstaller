@@ -23,7 +23,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Create autostart directory, if not present
+# Create autostart directory, if not already present
 mkdir -p ~/.config/autostart
 
 # Add to autostart at login
