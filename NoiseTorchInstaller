@@ -23,16 +23,17 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Start on login 
+# Create autostart directory, if not present
+mkdir -p ~/.config/autostart
+
+# Add to autostart at login
 echo "[Desktop Entry]
 Type=Application
 Name=Enable Noisetorch
 Comment=Enables noisetorch's virtual microphone 
 Exec=noisetorch -i
 StartupNotify=false
-Terminal=false" >> ~/.local/share/applications/noisetorch_startup.desktop
-mkdir ~/.config/autostart
-cp ~/.local/share/applications/noisetorch_startup.desktop ~/.config/autostart/
+Terminal=false" >> ~/.config/autostart/noisetorch_startup.desktop
 
 # Remove script after completion
 rm -- "$0"
