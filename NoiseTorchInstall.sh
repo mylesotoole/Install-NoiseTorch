@@ -6,7 +6,7 @@ cd $HOME/Downloads
 # Download the latest release from GitHub
 wget https://github.com/noisetorch/NoiseTorch/releases/download/v0.12.2/NoiseTorch_x64_v0.12.2.tgz
 
-# Unpack the tgz file, into your home directory
+# Extract the archive
 tar -C $HOME -h -xzf NoiseTorch_x64_v0.12.2.tgz
 
 # Remove the archive
@@ -15,7 +15,7 @@ rm -f NoiseTorch_x64_v0.12.2.tgz
 # Refresh icon cache
 gtk-update-icon-cache
 
-# Give it the required permissions
+# Give NoiseTorch its required permissions
 sudo setcap 'CAP_SYS_RESOURCE=+ep' ~/.local/bin/noisetorch
 
 # Make sure that is in your PATH
