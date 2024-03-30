@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 
-# Change to downloads directory
-cd $HOME/Downloads
-
 # Download the latest release from GitHub
 wget $(curl -s https://api.github.com/repos/noisetorch/Noisetorch/releases/latest | grep "browser_download_url.*.tgz\"" | cut -d : -f 2,3 | tr -d \")
 
-# Extract the archive
-tar -C $HOME -h -xzf NoiseTorch_x64_v0.12.2.tgz
+# Extract the archive to your local profile directory
+tar -C $HOME -h -xzf NoiseTorch_*.tgz
 
 # Remove the archive
 rm -f NoiseTorch_x64_v0.12.2.tgz
