@@ -26,11 +26,11 @@ mkdir -p ~/.config/autostart
 # Add to autostart at login
 echo "[Desktop Entry]
 Type=Application
-Name=Enable Noisetorch
-Comment=Enables noisetorch's virtual microphone 
+Name=Enable NoiseTorch
+Comment=Enables NoiseTorch Virtual Microphone 
 Exec=noisetorch -i
 StartupNotify=false
-Terminal=false" >> ~/.config/autostart/noisetorch_startup.desktop
+Terminal=false" >> ~/.config/autostart/noisetorch.desktop
 
 # Remove script after completion
 rm -- "$0"
