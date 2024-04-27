@@ -3,7 +3,7 @@
    
 **2.** Make the script executable with `chmod +x NoiseTorchInstaller`.
    
-**3.** Not as root, run it with `./NoiseTorchInstaller` on your user account.
+**3.** Run the script _**not as root and without sudo**_ with `./NoiseTorchInstaller`.
    > You will be prompted for password.
         
-**4.** Once the script completes, it will delete itself.
+**4.** Once completed, the installer script will delete itself.
