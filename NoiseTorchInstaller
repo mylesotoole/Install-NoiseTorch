@@ -7,7 +7,7 @@ wget $(curl -s https://api.github.com/repos/noisetorch/Noisetorch/releases/lates
 tar -C $HOME -h -xzf NoiseTorch_*.tgz
 
 # Remove the archive
-rm -f NoiseTorch_x64_v0.12.2.tgz
+rm -f NoiseTorch_*.tgz
 
 # Refresh icon cache
 gtk-update-icon-cache
