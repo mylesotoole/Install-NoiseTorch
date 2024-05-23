@@ -1,4 +1,4 @@
-### Running on Linux
+### Installing on Linux
 **1.** Copy and paste into your terminal:
 
 ```
