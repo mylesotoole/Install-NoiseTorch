@@ -2,5 +2,5 @@
 **1.** Copy and paste into your terminal:
 
 ```
-wget https://raw.githubusercontent.com/mylesotoole/NoiseTorchInstaller/main/NoiseTorchInstaller && chmod +x NoiseTorchInstaller && ./NoiseTorchInstaller
+wget https://raw.githubusercontent.com/mylesotoole/Install-NoiseTorch/main/Install-NoiseTorch && chmod +x Install-NoiseTorch  && ./Install-NoiseTorch 
 ```
