@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Remove old NoiseTorch files
+rm -f ~/.local/share/icons/hicolor/256x256/apps/noisetorch.png ~/Downloads/.local/share/applications/noisetorch.desktop ~/.local/bin/noisetorch
+
 # Download the latest release from GitHub
 wget $(curl -s https://api.github.com/repos/noisetorch/Noisetorch/releases/latest | grep "browser_download_url.*.tgz\"" | cut -d : -f 2,3 | tr -d \")
 
